@@ -3,9 +3,10 @@ import PropertyCard from "../components/PropertyCard";
 import propertiesData from "../data/propertiesData.json";
 import { useState } from "react";
 
-function Properties() {
+function Properties(props) {
   const [properties, setProperties] = useState(propertiesData);
-
+  const data = props.data;
+  
   return (
     <div className="overflow-hidden">
       <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto max-w-6xl gap-2 pb-20">
@@ -23,8 +24,8 @@ function Properties() {
             bathrooms={property.bathrooms}
           />
         ))}
-
       </div>
+      {console.log(data)}
     </div>
   );
 }

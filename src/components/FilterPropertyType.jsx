@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BiChevronDown } from "react-icons/bi";
 
 import propertiesData from "../data/propertiesData.json";
 
-function FilterPropertyType() {
-// function FilterPropertyType({ setSelectedType }) {
+function FilterPropertyType(props) {
+  // function FilterPropertyType({ setSelectedType }) {
   const [inputValue, setInputValue] = useState("");
   const [selectedType, setSelectedType] = useState("");
   const [open, setOpen] = useState(false);
@@ -12,6 +12,10 @@ function FilterPropertyType() {
   const uniqueTypes = Array.from(
     new Set(propertiesData?.map((property) => property.type))
   );
+
+  useEffect(() => {
+    props.setType(selectedType);
+  }, [selectedType, props.setType]);
 
   return (
     <div className={`text-start bg-inherit w-36 ${open ? "mt-12" : "mt-0"} `}>
@@ -23,9 +27,8 @@ function FilterPropertyType() {
           className="flex flex-row items-center justify-between bg-inherit px-2"
         >
           <p
-            className={`font-bold bg-inherit ${
-              !selectedType && "text-gray-800"
-            }`}
+            className={`font-bold bg-inherit ${!selectedType && "text-gray-800"
+              }`}
           >
             {selectedType
               ? selectedType?.length > 25
@@ -43,12 +46,10 @@ function FilterPropertyType() {
           {/* ======  */}
           {uniqueTypes?.map((type) => (
             <li
-              className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${
-                type?.toLowerCase() === selectedType?.toLowerCase() &&
+              className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${type?.toLowerCase() === selectedType?.toLowerCase() &&
                 "text-blue-800"
-              } ${
-                type?.toLowerCase().startsWith(inputValue) ? "block" : "hidden"
-              } `}
+                } ${type?.toLowerCase().startsWith(inputValue) ? "block" : "hidden"
+                } `}
               onClick={() => {
                 if (type?.toLowerCase() !== selectedType.toLowerCase()) {
                   setSelectedType(type);
@@ -59,29 +60,6 @@ function FilterPropertyType() {
               {type}
             </li>
           ))}
-          {/* ======  */}
-          {/* {uniqueTypes?.map((type) => (
-            <li
-              className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${
-                type?.toLowerCase() === selectedType?.toLowerCase() &&
-                "text-blue-800"
-              } ${
-                type?.toLowerCase().startsWith(inputValue) ? "block" : "hidden"
-              } `}
-              onClick={() => {
-                if (type?.toLowerCase() !== selectedType.toLowerCase()) {
-                  setSelectedType(type);
-                  setOpen(false);
-                }
-              }}
-            >
-              {type}
-            </li>
-          ))} */}
-
-          {/* <li className="hover:bg-blue-800 hover:text-white">USA</li>
-      <li className="hover:bg-blue-800 hover:text-white">Canada</li>
-      <li className="hover:bg-blue-800 hover:text-white">UK</li> */}
         </ul>
       </div>
     </div>
