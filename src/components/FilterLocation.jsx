@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BiChevronDown } from "react-icons/bi";
 import { AiOutlineSearch } from "react-icons/ai";
 
 import propertiesData from "../data/propertiesData.json";
 
-function FilterLocation() {
+function FilterLocation(props) {
   const [inputValue, setInputValue] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
   const [open, setOpen] = useState(false);
+  const data = props.data;
+  const setData = props.setData;
+
+  useEffect(() => {
+    props.setLocation(selectedLocation);
+  }, [selectedLocation, props.setLocation]);
+
   return (
     <div className={`text-start bg-inherit w-60 ${open ? "mt-36" : "mt-0"} `}>
       <p className="text-sm bg-white text-gray-400 px-2"> Location </p>
@@ -19,9 +26,8 @@ function FilterLocation() {
           className="flex flex-row items-center justify-between bg-inherit px-2"
         >
           <p
-            className={`font-bold bg-inherit ${
-              !selectedLocation && "text-gray-800"
-            }`}
+            className={`font-bold bg-inherit ${!selectedLocation && "text-gray-800"
+              }`}
           >
             {selectedLocation
               ? selectedLocation?.length > 20
@@ -49,14 +55,12 @@ function FilterLocation() {
           {/* Locations from data - dynamic */}
           {propertiesData?.map((property) => (
             <li
-              className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${
-                property?.location?.toLowerCase() ===
-                  selectedLocation?.toLowerCase() && "text-blue-800"
-              } ${
-                property?.location?.toLowerCase().startsWith(inputValue)
+              className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${property?.location?.toLowerCase() ===
+                selectedLocation?.toLowerCase() && "text-blue-800"
+                } ${property?.location?.toLowerCase().startsWith(inputValue)
                   ? "block"
                   : "hidden"
-              } `}
+                } `}
               onClick={() => {
                 if (
                   property?.location?.toLowerCase() !==
@@ -68,6 +72,7 @@ function FilterLocation() {
               }}
             >
               {property.location}
+              {/* {console.log(propertiesData)} */}
             </li>
           ))}
 
