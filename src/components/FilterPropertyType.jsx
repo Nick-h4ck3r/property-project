@@ -4,6 +4,7 @@ import { BiChevronDown } from "react-icons/bi";
 import propertiesData from "../data/propertiesData.json";
 
 function FilterPropertyType() {
+// function FilterPropertyType({ setSelectedType }) {
   const [inputValue, setInputValue] = useState("");
   const [selectedType, setSelectedType] = useState("");
   const [open, setOpen] = useState(false);
@@ -38,6 +39,8 @@ function FilterPropertyType() {
         {/* Search type  */}
         <ul className={`overflow-y-auto ${open ? "max-h-36" : "max-h-0"} `}>
           {/* Types from data - dynamic */}
+
+          {/* ======  */}
           {uniqueTypes?.map((type) => (
             <li
               className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${
@@ -56,6 +59,25 @@ function FilterPropertyType() {
               {type}
             </li>
           ))}
+          {/* ======  */}
+          {/* {uniqueTypes?.map((type) => (
+            <li
+              className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${
+                type?.toLowerCase() === selectedType?.toLowerCase() &&
+                "text-blue-800"
+              } ${
+                type?.toLowerCase().startsWith(inputValue) ? "block" : "hidden"
+              } `}
+              onClick={() => {
+                if (type?.toLowerCase() !== selectedType.toLowerCase()) {
+                  setSelectedType(type);
+                  setOpen(false);
+                }
+              }}
+            >
+              {type}
+            </li>
+          ))} */}
 
           {/* <li className="hover:bg-blue-800 hover:text-white">USA</li>
       <li className="hover:bg-blue-800 hover:text-white">Canada</li>
