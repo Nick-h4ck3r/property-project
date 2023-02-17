@@ -3,8 +3,8 @@ import React from "react";
 function FilterBar() {
   return (
     <div className="flex items-center bg-white justify-between relative px-5 mx-auto max-w-5xl py-4 mt-5 h-20 shadow mb-10">
-      {/* Location  */}
 
+      {/* Location  */}
       <div className="text-start">
         <p className="text-sm bg-white text-gray-400"> Location </p>
         <h2 className="font-bold bg-white">New York, USA</h2>

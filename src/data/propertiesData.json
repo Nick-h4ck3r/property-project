@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "image": "https://source.unsplash.com/random/?luxury,apartment",
+    "type": "Apartment",
+    "location": " Downtown, New York",
+    "price": 500,
+    "name": "Luxury apartment",
+    "available_from": "2022-03-01",
+    "area": {
+      "length": 10,
+      "width": 8
+    },
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  {
+    "id": "2",
+    "image": "https://source.unsplash.com/random/?house,modern",
+    "type": "House",
+    "location": "Beverly Hills in Los Angeles",
+    "price": 1540,
+    "name": "Modern house",
+    "available_from": "2022-02-15",
+    "area": {
+      "length": 12,
+      "width": 15
+    },
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  {
+    "id": "3",
+    "image": "https://source.unsplash.com/random/?cozy,apartment",
+    "type": "Apartment",
+    "location": "In Downtown, San Francisco",
+    "price": 2590,
+    "name": "Cozy apartment",
+    "available_from": "2022-03-01",
+    "area": {
+      "length": 8,
+      "width": 6
+    },
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  {
+    "id": "4",
+    "image": "https://source.unsplash.com/random/?luxury,house",
+    "type": "House",
+    "location": "Ocean view in Miami",
+    "price": 3500,
+    "name": "Luxury house",
+    "available_from": "2022-02-15",
+    "area": {
+      "length": 15,
+      "width": 20
+    },
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  {
+    "id": "5",
+    "image": "https://source.unsplash.com/random/?studio,apartment",
+    "type": "Apartment",
+    "location": "In Downtown, Chicago",
+    "price": 1800,
+    "name": "Studio apartment",
+    "available_from": "2022-03-01",
+    "area": {
+      "length": 6,
+      "width": 6
+    },
+    "bedrooms": 0,
+    "bathrooms": 1
+  },
+  {
+    "id": "6",
+    "image": "https://source.unsplash.com/random/?victorian,house",
+    "type": "House",
+    "location": "Histric district in Boston",
+    "price": 1000,
+    "name": "Victorian house",
+    "available_from": "2022-02-15",
+    "area": {
+      "length": 15,
+      "width": 15
+    },
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  {
+    "id": "7",
+    "image": "https://source.unsplash.com/random/?lake,apartment",
+    "type": "Apartment",
+    "location": "Lake view in Seattle",
+    "price": 700,
+    "name": "Modern apartment",
+    "available_from": "2022-03-01",
+    "area": {
+      "length": 10,
+      "width": 8
+    },
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  {
+    "id": "8",
+    "image": "https://source.unsplash.com/random/?pool,house",
+    "type": "House",
+    "location": "Beach house with private pool, SD",
+    "price": 2800,
+    "name": "Beach house",
+    "available_from": "2022-02-15",
+    "area": {
+      "length": 12,
+      "width": 15
+    },
+    "bedrooms": 3,
+    "bathrooms": 2
+  }
+]
