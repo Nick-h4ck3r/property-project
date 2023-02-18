@@ -18,6 +18,9 @@ function FilterBar(props) {
       } else if (location) {
         return property.location === location;
       } else if (type) {
+        if(type === "All") {
+          return property;
+        }
         return property.type === type;
       } else {
         return property;
