@@ -118,5 +118,95 @@
     },
     "bedrooms": 3,
     "bathrooms": 2
+  },
+  {
+    "id": "9",
+    "image": "https://source.unsplash.com/random/310x190/?cozy,apartment",
+    "type": "Apartment",
+    "location": "In Downtown, Chicago",
+    "price": 1800,
+    "name": "Cozy apartment",
+    "available_from": "2022-03-01",
+    "area": {
+      "length": 8,
+      "width": 6
+    },
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  {
+    "id": "10",
+    "image": "https://source.unsplash.com/random/310x190/?luxury,house",
+    "type": "House",
+    "location": "Ocean view in Miami",
+    "price": 3500,
+    "name": "Luxury house",
+    "available_from": "2022-02-15",
+    "area": {
+      "length": 15,
+      "width": 20
+    },
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  {
+    "id": "11",
+    "image": "https://source.unsplash.com/random/310x190/?studio,apartment",
+    "type": "Apartment",
+    "location": "In Downtown, Chicago",
+    "price": 1800,
+    "name": "Studio apartment",
+    "available_from": "2022-03-01",
+    "area": {
+      "length": 6,
+      "width": 6
+    },
+    "bedrooms": 0,
+    "bathrooms": 1
+  },
+  {
+    "id": "12",
+    "image": "https://source.unsplash.com/random/310x190/?victorian,house",
+    "type": "House",
+    "location": "Histric district in Boston",
+    "price": 1000,
+    "name": "Victorian house",
+    "available_from": "2022-02-15",
+    "area": {
+      "length": 15,
+      "width": 15
+    },
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  {
+    "id": "13",
+    "image": "https://source.unsplash.com/random/310x190/?lake,apartment",
+    "type": "Apartment",
+    "location": "Lake view in Seattle",
+    "price": 700,
+    "name": "Modern apartment",
+    "available_from": "2022-03-01",
+    "area": {
+      "length": 10,
+      "width": 8
+    },
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  {
+    "id": "14",
+    "image": "https://source.unsplash.com/random/310x190/?pool,house",
+    "type": "House",
+    "location": "Beach house, San Diego",
+    "price": 2800,
+    "name": "Beach house",
+    "available_from": "2022-02-15",
+    "area": {
+      "length": 12,
+      "width": 15
+    },
+    "bedrooms": 3,
+    "bathrooms": 2
   }
 ]

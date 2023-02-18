@@ -18,7 +18,7 @@ function FilterPropertyType(props) {
   }, [selectedType, props.setType]);
 
   return (
-    <div className={`text-start bg-inherit w-36 ${open ? "mt-12" : "mt-0"} `}>
+    <div className={`text-start bg-inherit w-36 ${open ? "mt-16" : "mt-0"} `}>
       <p className="text-sm bg-white text-gray-400 px-2"> Property Type </p>
       <div className="bg-inherit hover:cursor-pointer rounded-md">
         {/* Select Property Type  */}
@@ -44,6 +44,17 @@ function FilterPropertyType(props) {
           {/* Types from data - dynamic */}
 
           {/* ======  */}
+          <li className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${"All".toLowerCase() === selectedType?.toLowerCase() &&
+                "text-blue-800"
+                } ${"All"?.toLowerCase().startsWith(inputValue) ? "block" : "hidden"
+                } `}onClick={() => {
+            if (selectedType !== "All") {
+              setSelectedType("All");
+              setOpen(false);
+            }
+          }} >
+            All
+          </li>
           {uniqueTypes?.map((type) => (
             <li
               className={`hover:bg-blue-800 hover:text-white font-bold px-2 bg-white ${type?.toLowerCase() === selectedType?.toLowerCase() &&
