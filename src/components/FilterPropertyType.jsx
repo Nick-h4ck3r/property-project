@@ -20,11 +20,11 @@ function FilterPropertyType(props) {
   return (
     <div className={`text-start bg-inherit w-36 ${open ? "mt-12" : "mt-0"} `}>
       <p className="text-sm bg-white text-gray-400 px-2"> Property Type </p>
-      <div className="bg-inherit">
+      <div className="bg-inherit hover:cursor-pointer rounded-md">
         {/* Select Property Type  */}
         <div
           onClick={() => setOpen(!open)}
-          className="flex flex-row items-center justify-between bg-inherit px-2"
+          className="rounded-md flex flex-row items-center justify-between bg-inherit px-2"
         >
           <p
             className={`font-bold bg-inherit ${!selectedType && "text-gray-800"
@@ -40,7 +40,7 @@ function FilterPropertyType(props) {
         </div>
 
         {/* Search type  */}
-        <ul className={`overflow-y-auto ${open ? "max-h-36" : "max-h-0"} `}>
+        <ul className={`overflow-y-auto ${open ? "max-h-36" : "max-h-0"} rounded-md `}>
           {/* Types from data - dynamic */}
 
           {/* ======  */}

@@ -15,18 +15,18 @@ function PropertyCard({
   return (
     <div className="">
       {/* Card component */}
-      <div className="flex flex-col items-center justify-start mx-auto mt-7 bg-black w-[270px] rounded-md h-[350px] shadow-md">
+      <div className="flex flex-col items-center justify-start mx-auto mt-7 bg-black w-[310px] h-[350px] shadow-md rounded-md">
         {/* Image */}
-        <div className="bg-transparent w-[270px] h-[190px]">
+        <div className="bg-transparent w-[310px] h-[190px] rounded-t-md">
           <img
             src={image}
             alt="property"
-            className="rounded-md object-cover w-full h-full"
+            className="object-cover w-full h-full rounded-t-md shadow-md"
           />
         </div>
 
         {/* Property type */}
-        <div className=" bg-white w-full h-full flex flex-col px-4">
+        <div className=" bg-white w-full h-full flex flex-col px-4 rounded-b-md">
           {/* Price, Name and Location */}
           <div className="flex flex-row items-center justify-between bg-white text-blue-800 rounded-md text-sm text-start mt-5">
             <div className="bg-white">
@@ -42,11 +42,11 @@ function PropertyCard({
             <div className="bg-white">
               <img
                 src="https://img.icons8.com/ios-glyphs/30/1e40af/hearts.png"
-                className="h-7 w-7 border border-gray-300 rounded-full p-1.5 bg-white"
+                className="h-7 w-7 border border-gray-300 rounded-full p-1.5 bg-white hover:cursor-pointer"
               />
             </div>
           </div>
-          <div className=" bg-white text-black rounded-md text-sm text-start mt-1">
+          <div className=" bg-white text-black rounded-md text-sm text-start mt-1 hover:cursor-pointer">
             <p className="bg-transparent font-bold text-xl">{name}</p>
           </div>
           <div className=" bg-white text-gray-400 text-xs text-start mt-1.5 border border-transparent border-b-gray-300 pb-3 rounded-none">
@@ -75,7 +75,8 @@ function PropertyCard({
                 src="https://img.icons8.com/ios-glyphs/30/1e40af/length.png"
               />
               <p className="bg-inherit">
-                {length}x{width} m<sup class="font-features sups">2</sup>
+                {length}x{width} m
+                <sup class="font-features bg-white sups">2</sup>
               </p>
             </div>
           </div>

@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "https://source.unsplash.com/random/?luxury,apartment",
+    "image": "https://source.unsplash.com/random/270x190/?luxury,apartment",
     "type": "Apartment",
     "location": " Downtown, New York",
     "price": 500,
@@ -16,7 +16,7 @@
   },
   {
     "id": "2",
-    "image": "https://source.unsplash.com/random/?house,modern",
+    "image": "https://source.unsplash.com/random//270x190?house,modern",
     "type": "House",
     "location": "Los Angeles",
     "price": 1540,
@@ -31,7 +31,7 @@
   },
   {
     "id": "3",
-    "image": "https://source.unsplash.com/random/?cozy,apartment",
+    "image": "https://source.unsplash.com/random/270x190/?cozy,apartment",
     "type": "Apartment",
     "location": "San Francisco",
     "price": 2590,
@@ -46,7 +46,7 @@
   },
   {
     "id": "4",
-    "image": "https://source.unsplash.com/random/?luxury,house",
+    "image": "https://source.unsplash.com/random/270x190/?luxury,house",
     "type": "House",
     "location": "Ocean view in Miami",
     "price": 3500,
@@ -61,7 +61,7 @@
   },
   {
     "id": "5",
-    "image": "https://source.unsplash.com/random/?studio,apartment",
+    "image": "https://source.unsplash.com/random/270x190/?studio,apartment",
     "type": "Apartment",
     "location": "In Downtown, Chicago",
     "price": 1800,
@@ -76,7 +76,7 @@
   },
   {
     "id": "6",
-    "image": "https://source.unsplash.com/random/?victorian,house",
+    "image": "https://source.unsplash.com/random/270x190/?victorian,house",
     "type": "House",
     "location": "Histric district in Boston",
     "price": 1000,
@@ -91,7 +91,7 @@
   },
   {
     "id": "7",
-    "image": "https://source.unsplash.com/random/?lake,apartment",
+    "image": "https://source.unsplash.com/random/270x190/?lake,apartment",
     "type": "Apartment",
     "location": "Lake view in Seattle",
     "price": 700,
@@ -106,7 +106,7 @@
   },
   {
     "id": "8",
-    "image": "https://source.unsplash.com/random/?pool,house",
+    "image": "https://source.unsplash.com/random/310x190/?pool,house",
     "type": "House",
     "location": "Beach house, San Diego",
     "price": 2800,
