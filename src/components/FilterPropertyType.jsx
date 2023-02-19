@@ -18,7 +18,7 @@ function FilterPropertyType(props) {
   }, [selectedType, props.setType]);
 
   return (
-    <div className={`text-start bg-inherit w-36 ${open ? "mt-16" : "mt-0"} `}>
+    <div className={`text-start bg-inherit w-36 ${open ? "mt-[72px]" : "mt-0"} `}>
       <p className="text-sm bg-white text-gray-400 px-2"> Property Type </p>
       <div className="bg-inherit hover:cursor-pointer rounded-md">
         {/* Select Property Type  */}
