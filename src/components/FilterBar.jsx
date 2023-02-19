@@ -38,15 +38,17 @@ function FilterBar(props) {
         {/* Location  */}
         <FilterLocation location={location} setLocation={setLocation} />
         {/* When  */}
-        <div className="text-start">
+        <div className="group text-start">
           <p className="text-sm bg-white text-gray-400"> When</p>
           <h1 className="font-bold bg-white"> Select Move-in Date </h1>
+          <span class="absolute top-16 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">This feature will be available soon!</span>
         </div>
 
         {/* Price Range  */}
-        <div className="text-start">
+        <div className="group text-start">
           <p className="text-sm bg-white text-gray-400"> Price </p>
-          <h1 className="font-bold bg-white"> $500 - $2,000 </h1>
+          <h1 className="font-bold bg-white "> $500 - $2,000 </h1>
+          <span class="absolute top-16 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">This feature will be available soon!</span>
         </div>
 
         {/* Property Type  */}
