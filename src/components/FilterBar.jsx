@@ -37,6 +37,7 @@ function FilterBar(props) {
       <div className="flex items-center bg-white justify-between relative px-5 mx-auto max-w-5xl py-4 mt-7 h-20 shadow mb-5 rounded-md">
         {/* Location  */}
         <FilterLocation location={location} setLocation={setLocation} />
+        
         {/* When  */}
         <div className="group text-start">
           <p className="text-sm bg-white text-gray-400"> When</p>
@@ -56,8 +57,8 @@ function FilterBar(props) {
         {/* {console.log(data)} */}
 
         {/* Search Button  */}
-        <div className="bg-blue-800 px-6 text-white py-3 text-sm rounded-md  hover:cursor-pointer">
-          <h1 className="font-semibold bg-blue-800" onClick={filterData}>
+        <div className="bg-[#5359bd] px-6 text-white py-3 text-sm rounded-md  hover:cursor-pointer">
+          <h1 className="font-semibold bg-[#5359bd]" onClick={filterData}>
             {" "}
             Search{" "}
           </h1>

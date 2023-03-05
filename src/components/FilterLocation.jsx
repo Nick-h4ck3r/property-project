@@ -23,7 +23,7 @@ function FilterLocation(props) {
         {/* Select location  */}
         <div
           onClick={() => setOpen(!open)}
-          className="flex flex-row items-center justify-between bg-inherit px-2 hover:cursor-pointer"
+          className="flex flex-row items-center justify-start bg-inherit pl-2 hover:cursor-pointer"
         >
           <p
             className={`font-bold bg-inherit ${!selectedLocation && "text-gray-800"
@@ -35,11 +35,11 @@ function FilterLocation(props) {
                 : selectedLocation
               : "Select Location"}
           </p>
-          <BiChevronDown size={20} />
+          <BiChevronDown size={20} className="ml-5" />
         </div>
 
         {/* Search location  */}
-        <ul className={`overflow-y-auto scrollbar-thumb-slate-300 scrollbar-thin ${open ? "max-h-36" : "max-h-0"} `}>
+        <ul className={`overflow-y-auto scrollbar-thumb-slate-300 scrollbar-thin rounded-md ${open ? "max-h-36" : "max-h-0"} `}>
           {/* Search input with icon  */}
           <div className="flex flex-row items-center sticky top-0 bg-white px-2">
             <AiOutlineSearch size={20} className="text-gray-400 bg-inherit" />
