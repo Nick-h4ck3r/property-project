@@ -7,7 +7,7 @@ function Header() {
         <div className="flex justify-between items-center mx-auto max-w-7xl px-2">
           <a href="https://nikhilkadam.vercel.app" className="flex items-center">
             <img
-              src="https://img.icons8.com/ios-glyphs/30/1e40af/homeadvisor.png"
+              src="https://img.icons8.com/ios-glyphs/30/5359bd/homeadvisor.png"
               className="mr-3 h-6 sm:h-9"
               alt=""
             />
@@ -64,13 +64,13 @@ function Header() {
           <div className="flex items-center">
             <a
               href="#login"
-              className="text-blue-800 font-medium rounded-md text-sm px-5 py-1.5 mr-2 border border-blue-800"
+              className="text-[#5359bd] font-medium rounded-md text-sm px-5 py-1.5 mr-2 border border-[#5359bd]"
             >
               Log in
             </a>
             <a
               href="#signup"
-              className="text-white bg-blue-800 font-medium rounded-md text-sm px-5 py-1.5 mr-2 border border-blue-800"
+              className="text-white bg-[#5359bd] font-medium rounded-md text-sm px-5 py-1.5 mr-2 border border-[#5359bd]"
             >
               Sign up
             </a>
